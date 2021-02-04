@@ -59,8 +59,6 @@ def sendMsg():
     payload={
         'chat_id':chat_id,
         'text':text,
-        
-
     }
     r=requests.get(url,payload)
 
@@ -78,7 +76,7 @@ while True:
     new_update_id=updateId()
     if last_update_id!=new_update_id:
         sendMsg()
-        print(0)
+        
         last_update_id=new_update_id
         
 
